@@ -24,9 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-         uses: actions/checkout@v2
+        uses: actions/checkout@v2
       
       - name: JMeter Test
-         with:
-         test-plan-path: './perfaction2.jmx'
+        uses: QAInsights/PerfAction@3.0
+          with:
+            test-plan-path: './perfaction2.jmx'
 
