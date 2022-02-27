@@ -27,7 +27,6 @@ jobs:
          uses: actions/checkout@v2
       
       - name: JMeter Test
-         uses: QAInsights/PerfAction@v2.0
          with:
          test-plan-path: './perfaction2.jmx'
          
