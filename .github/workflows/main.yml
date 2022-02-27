@@ -24,13 +24,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-- name: JMeter Test
+      
+  - name: JMeter Test
   uses: QAInsights/PerfAction@v2.0
   with:
     test-plan-path: ./perfaction2.jmx
-    args: ""
-- name: Upload Results
+
+  - name: Upload Results
   uses: actions/upload-artifact@v2
   with:
     name: jmeter-results
