@@ -28,7 +28,7 @@ jobs:
   - name: JMeter Test
   uses: QAInsights/PerfAction@v2.0
   with:
-    test-plan-path: ./perfaction2.jmx
+    test-plan-path: './perfaction2.jmx'
 
   - name: Upload Results
   uses: actions/upload-artifact@v2
