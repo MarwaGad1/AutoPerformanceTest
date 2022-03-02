@@ -29,7 +29,7 @@ jobs:
       - name: JMeter Test
         uses: QAInsights/PerfAction@3.0
         with:
-           test-plan-path: ./perfaction2.jmx
+           test-plan-path: ./git.jmx
 
       - name: Upload Results
         uses: actions/upload-artifact@v2
